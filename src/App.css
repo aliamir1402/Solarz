@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.App-item {
+  flex-grow: 1;
+  flex-basis: 200;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100%;
+  color: rgb(58, 58, 58);
+  font-family: monospace;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 3%;
+  margin-top: 3%;
+  color: white;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 3%;
+  margin-top: 3%;
+  color: white;
+}
+
+.bor {
+  border: 0px solid rgb(255, 0, 0);
+}
+
+.Main-Content {
+  padding: 50px;
+}
+
+.Drop-Down {
+  color: white;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.Option-Down {
+  color: #282c34;
+}
+
+.Sub-Content-1 {
+  margin-top: 2%;
+}
+
+.SubSub-Content-1 {
+  color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(240, 79, 68);
+  box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
+}
+.SubText-1 {
+  font-size: 50px;
+  padding: 20px;
+  font-weight: 900;
+}
+.SubText-2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.SubSub-Content-2 {
+  color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(142, 68, 240);
+  box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
+}
+.SubSub-Content-3 {
+  color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(233, 67, 144);
+  box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
+}
+.SubSub-Content-4 {
+  color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(46, 129, 238);
+  box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
+}
+
+.CardAreaChartMargins {
+  margin-left: 0%;
+  margin-right: 5%;
+}
+
+.Sub-Section-Rec-1 {
+  color: whitesmoke;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: left;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: rgb(230, 87, 62);
+  box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
+}
+
+.SubSubContent-1 {
+  color: white;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-top: 50px;
+}
+
+.SubSubContent-2 {
+  color: white;
+  font-size: 30px;
+  margin-left: 2%;
+  margin-top: 50px;
+}
+
+.Qr-Div {
+  margin-left: 10%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+}
+
+.SubSub-Section-Rec-1{
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0px 0px 10px 3px rgba(78, 78, 78, 0.144);
+  margin: 30px;
+  text-align: center;
+}
+
+.Section-Rec-Size-Adjust{
+  width: 93%;
+}
