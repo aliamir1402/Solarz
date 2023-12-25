@@ -82,6 +82,10 @@
   font-size: 20px;
   font-weight: 300;
 }
+.SubText-3{
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .SubSub-Content-2 {
   color: whitesmoke;
@@ -138,7 +142,7 @@
   text-align: left;
   margin: 15px;
   border-radius: 15px;
-  background-color: rgb(230, 87, 62);
+  background-color: rgb(247, 70, 57);
   box-shadow: 2px 2px 10px 3px rgb(56, 56, 56);
 }
 
@@ -165,13 +169,13 @@
 }
 
 .SubSub-Section-Rec-1{
-  width: fit-content;
+  width: 110px;
   height: fit-content;
   padding: 25px;
-  color: white;
+  color: rgb(240, 240, 240);
   font-size: 20px;
   border-radius: 15px;
-  background-color: rgb(49, 49, 49);
+  background-color: rgb(51, 51, 51);
   box-shadow: 0px 0px 10px 3px rgba(78, 78, 78, 0.144);
   margin: 30px;
   text-align: center;

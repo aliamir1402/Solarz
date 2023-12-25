@@ -1,11 +1,38 @@
 import React from "react";
 import AreaLineGraph from "./areaChart.js";
 
-export default function Plant2DataAnalytics() {
+export default function Plant2DataAnalytics(props) {
+  var Module = props.Module;
+  var Metrics = props.Metrics;
+  var DailyGen = props.DailyGen;
+  var AvgTime, AvgDailyGen, MaxGen, MinGen, MaxDate, MinDate;
+  var x = [],
+    y = [];
+
+  for (var i = 0; i < Metrics.length; i++) {
+    if (Metrics[i].ID === Module) {
+      AvgTime = Metrics[i].Time;
+      AvgDailyGen = Math.round(Metrics[i].Avg_Gen / 1000);
+      MaxGen = Math.round(Metrics[i].Max_Gen / 1000);
+      MinGen = Math.round(Metrics[i].Min_Gen / 1000);
+      MaxDate = Metrics[i].Max_Date;
+      MinDate = Metrics[i].Min_Date;
+      break;
+    }
+  }
+  for (var j = 0; j < DailyGen.length; j++) {
+    x.push(DailyGen[j].Date);
+    y.push(DailyGen[j].DailyGen);
+  }
+
   return (
     <div className="bor App-container Sub-Content-1">
       <div className="bor App-item">
-        <AreaLineGraph title="Plant 2 Power Generation"></AreaLineGraph>
+        <AreaLineGraph
+          title="Plant 2 Power Generation"
+          x={x}
+          y={y}
+        ></AreaLineGraph>
       </div>
       <div className="bor App-item">
         <div className="bor App-container">
@@ -21,7 +48,8 @@ export default function Plant2DataAnalytics() {
               }}
             />
             <span className="SubText-1">
-              12:14<span className="SubText-2"> PM</span>
+              {AvgTime}
+              <span className="SubText-2"></span>
             </span>
           </div>
           <div className="bor App-item SubSub-Content-2">
@@ -34,7 +62,8 @@ export default function Plant2DataAnalytics() {
               }}
             />
             <span className="SubText-1">
-              5.32<span className="SubText-2"> M Units</span>
+              {AvgDailyGen}
+              <span className="SubText-2"> K Units</span>
             </span>
           </div>
         </div>
@@ -51,7 +80,9 @@ export default function Plant2DataAnalytics() {
               }}
             />
             <span className="SubText-1">
-              283<span className="SubText-2"> K Units</span>
+              {MaxGen}
+              <span className="SubText-2"> K Units </span>
+              <span className="SubText-3">{MaxDate}</span>
             </span>
           </div>
           <div className="bor App-item SubSub-Content-4">
@@ -66,7 +97,9 @@ export default function Plant2DataAnalytics() {
               }}
             />
             <span className="SubText-1">
-              28<span className="SubText-2"> K Units</span>
+              {MinGen}
+              <span className="SubText-2"> K Units </span>
+              <span className="SubText-3">{MinDate}</span>
             </span>
           </div>
         </div>
