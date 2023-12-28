@@ -113,16 +113,14 @@ function App() {
   // Render loading state if data is still being fetched
   if (loading) {
     return (
-      <p
-        style={{
-          textAlign: "center",
-          justifyItems: "center",
-          fontFamily: "monospace",
-          fontSize: "30px",
-        }}
-      >
-        <img src={solarPanels}></img>
-      </p>
+      <div className="imgSolar">
+        <img
+          src={solarPanels}
+          alt="Solar Panels"
+          width={50}
+          height={50}
+        />
+      </div>
     );
   }
 
