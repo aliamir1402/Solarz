@@ -14,6 +14,7 @@ import FutureStats from "./components/futureStats.js";
 import QrContent from "./components/QrContent.js";
 import RecommondComp from "./components/recommondComp.js";
 import React, { useEffect, useState } from "react";
+import solarPanels from "./components/images/solarPanel.gif";
 
 function App() {
   const [Value, setValue] = useState([]);
@@ -120,7 +121,7 @@ function App() {
           fontSize: "30px",
         }}
       >
-        Loading...
+        <img src={solarPanels}></img>
       </p>
     );
   }
