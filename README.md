@@ -4,8 +4,3 @@ This data has been gathered at two solar power plants in India over a 34 day per
 
 https://colab.research.google.com/drive/1B7yjwZrkg0_u9RlAX6kJsD4Y51Uy_0Za
 
-
-
-
-
-https://chat.openai.com/share/302f1a66-f6fc-4034-b7c9-c669b3d396f7
